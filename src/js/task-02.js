@@ -13,6 +13,14 @@ const makeIngredients = ingredients.map(elem => {
   const liRef = document.createElement("li");
   liRef.textContent = elem;
   liRef.classList.add("item");
-  ulRef.appendChild(liRef);
-  return ulRef;
-})
+  return liRef;
+});
+
+ulRef.append(...makeIngredients);
+
+
+
+
+
+
+
