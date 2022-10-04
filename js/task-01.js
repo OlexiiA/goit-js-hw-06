@@ -12,6 +12,3 @@ liRef.forEach((elem) => {
     
 })
 
-
-
-

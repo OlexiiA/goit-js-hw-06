@@ -13,12 +13,24 @@ const images = [
   },
 ];
 
-const ulRef = document.querySelector(".gallery");
+// const ulRef = document.querySelector(".gallery");
 
 
-const makeBoxImg = image => {
-  return `<li><img class = "img" src=${image.url} alt=${image.alt}/></li>`
+// const makeBoxImg = image => {
+//   return `<li><img class = "img" src=${image.url} alt=${image.alt}/></li>`
+// };
+
+// const makeBox = images.map(makeBoxImg).join('');
+// ulRef.insertAdjacentHTML(`afterbegin`, makeBox);
+
+
+
+
+const ulRef = document.querySelector(`.gallery`);
+
+const makeTag = elem => {
+  return `<li><img class = "img" src=${elem.url} alt=${elem.alt}/></li>`;
 };
 
-const makeBox = images.map(makeBoxImg).join('');
-ulRef.insertAdjacentHTML(`afterbegin`, makeBox);
+const imgBox = images.map(makeTag).join('');
+ulRef.insertAdjacentHTML(`afterbegin`, imgBox);

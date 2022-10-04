@@ -8,3 +8,7 @@ inputNameRef.addEventListener("input", (event) => {
   }
   nameOutputRef.textContent = event.currentTarget.value;
 });
+
+
+
+
